@@ -1,2 +1,2 @@
 # dotfiles
-my linux dotfiles
+設定ファイルを投げる
