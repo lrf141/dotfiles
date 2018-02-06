@@ -39,6 +39,7 @@ set shiftwidth=2
 set updatetime=250
 set noshowmode
 set laststatus=2
+set t_Co=256
 
 let NERDTreeShowHidden = 1
 "let g:airline_theme='wombat'
