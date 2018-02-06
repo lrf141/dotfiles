@@ -23,6 +23,14 @@ NeoBundle 'itchyny/landscape.vim'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Xuyuanp/nerdtree-git-plugin'
+NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'osyo-manga/unite-quickfix'
+NeoBundle 'osyo-manga/shabadou.vim'
+NeoBundle 'Shougo/vimproc', {
+      \'build':{
+      \'unix': 'make -f make_unix.mak',
+      \},
+      \}
 
 call neobundle#end()
 
@@ -41,7 +49,6 @@ set noshowmode
 set laststatus=2
 set t_Co=256
 
-let NERDTreeShowHidden = 1
 "let g:airline_theme='wombat'
 "let g:ariline_section_y = 'BN: %{bufnr("%")}'
 "let g:airline#extensions#branch#enabled = 1
@@ -186,6 +193,8 @@ function! MyCharCode()
   return "'". char ."' ". nr
 endfunction
 
+" NERDTree Settings
+let NERDTreeShowHidden = 1
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "*",
     \ "Staged"    : "+",
@@ -201,3 +210,19 @@ let g:NERDTreeIndicatorMapCustom = {
 
 nnoremap <silent><C-e> :NERDTree<CR>
 nmap     <Leader><Tab> <C-w>w
+
+" quickrun settings
+let g:quickrun_config = {
+      \"_" : {
+      \"hook/close_unite_quickfix/enable_hook_loaded": 1,
+      \"hook/close_quickfix/enable_failure": 1,
+      \"hook/close_quickfix/enable_exit": 1,
+      \"hook/close_buffer/enable_failure": 1,
+      \"hook/close_buffer/enable_empty_data": 1,
+      \"outputter/buffer/split": ":botright 10",
+      \"hook/time/enable": '1',
+      \"runner": "vimproc",
+      \"runner/vimproc/updatetime": 40,
+      \}
+      \}
+nmap <Leader>r <Plug>(quickrun)
