@@ -27,7 +27,7 @@ source ~/.config/nvim/plugin/nerdtree.rc.vim
 '''
 
 [[plugins]]
-'Xuyuanp/nerdtree-git-plugin'
+repo = 'Xuyuanp/nerdtree-git-plugin'
 
 [[plugins]]
 repo = 'Townk/vim-autoclose'
