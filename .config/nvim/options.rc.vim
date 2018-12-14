@@ -3,7 +3,7 @@ augroup InitialMessage
   autocmd!
   autocmd VimEnter * echo "(U^w^) < enjoy vimming! NO MORE emacs!!!"
 augroup END
-
+    
 set number
 set title
 set tabstop=2

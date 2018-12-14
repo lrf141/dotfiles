@@ -23,10 +23,9 @@
 set runtimepath+=~/.config/nvim/
 runtime! init.vim
 
-if has("syntax")
-	syntax on
-endif
+syntax on
 set t_Co=256
 set t_ut=
-set background=dark
+set tabstop=4
+set shiftwidth=4
 colorscheme molokai

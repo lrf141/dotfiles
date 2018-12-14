@@ -23,7 +23,7 @@ depends = 'unite.vim'
 [[plugins]]
 repo = 'scrooloose/nerdtree'
 hook_add = '''
-source ~/.config/nvim/plugin/nerdtree.rc.vim
+source ~/.config/nvim/plugins/nerdtree.rc.vim
 '''
 
 [[plugins]]
