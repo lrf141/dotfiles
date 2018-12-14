@@ -70,6 +70,7 @@ fi
 symlink() {
   [ -e "$2" ] || ln -sf "$1" "$2"
 }
+
 ## create symbolic link
 echo ""
 info "Creating symbolic link..."
@@ -81,4 +82,6 @@ symlink "$dotfiles/.vimrc" "$HOME/.vimrc"
 
 # Neovim
 info "config about neovim"
+mkdir -p $HOME/.config/nvim
 symlink "$dotfiles/.config/nvim" "$HOME/.config/nvim"
+

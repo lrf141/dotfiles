@@ -1,13 +1,11 @@
 # dotfiles
 
-go the hell
+![](https://img.shields.io/badge/works%20on-Ubuntu-DD4814.svg)
 
-# yap
+This is a repository with my configuration files, those are verified on Linux.
 
-yeah
-
-
-## test
-hello
-
-設定ファイルを投げる主にエディタ関連
+## setup
+Just copy and execute this !!!
+```bash
+$ bash -c "`curl -fsSL https://raw.githubusercontent.com/lrf141/dotfiles/master/setup.sh `"
+```
