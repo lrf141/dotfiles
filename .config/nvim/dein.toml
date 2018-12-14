@@ -57,6 +57,17 @@ hook_post_update = '''
 
 [[plugins]]
 repo = 'tomasr/molokai'
+hook_add = '''
+  source ~/.config/nvim/plugins/molokai.rc.vim
+'''
+
+
+[[plugins]]
+repo = 'cocopon/iceberg.vim'
+#if = "has('nvim')"
+#hook_add = '''
+#source ~/.config/nvim/plugins/iceberg.rc.vim
+#'''
 
 [[plugins]]
 repo = 'vim-scripts/Wombat'
